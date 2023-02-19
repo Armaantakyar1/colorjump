@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlatformActivator : MonoBehaviour
 {
+    [SerializeField] GameObject platformActive;
     // Start is called before the first frame update
     void Start()
     {
