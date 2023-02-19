@@ -16,4 +16,8 @@ public class PlatformActivator : MonoBehaviour
     {
         
     }
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        platformActive.SetActive(true);
+    }
 }
