@@ -126,7 +126,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d14c12475678dd4299293a1e8375d6c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  platformActive: {fileID: 8961226527589764615, guid: 8c0fb1b1cbb898e4da168894a0ce9ae1, type: 3}
+  platformActive: {fileID: 0}
 --- !u!114 &917696344637260968
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -139,7 +139,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c610dc0a48ca6946baa4961f9f1c272, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  platformDeactive: {fileID: 8961226527589764615, guid: 8c0fb1b1cbb898e4da168894a0ce9ae1, type: 3}
+  platformDeactive: {fileID: 0}
 --- !u!251 &-2311888004961855238
 PlatformEffector2D:
   m_ObjectHideFlags: 0
