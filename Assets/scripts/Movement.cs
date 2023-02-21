@@ -11,6 +11,7 @@ public class Movement : MonoBehaviour
     [SerializeField] KeyCode right;
     [SerializeField] KeyCode left;
     [SerializeField] KeyCode jump;
+    public bool canjump = true;
     void Start()
     {
 
@@ -21,6 +22,7 @@ public class Movement : MonoBehaviour
     {
 
         float horizontal = 0;
+      
        
 
         if (Input.GetKey(right))
@@ -31,14 +33,23 @@ public class Movement : MonoBehaviour
         {
             horizontal = -1f;
         }
-        if (Input.GetKeyDown(jump))
+        if (Input.GetKeyDown(jump) && canjump== true )
         {
-            rb.AddForce(Vector2.up * jumpForce);
+            rb.AddForce(Vector2.up * jumpForce* speed);
+
+            canjump = false;
         }
 
 
         Vector2 direction = new Vector2(horizontal,0);
         rb.velocity = direction * speed;
 
+    }
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (canjump == false)
+        {
+            canjump = true;
+        }
     }
 }
