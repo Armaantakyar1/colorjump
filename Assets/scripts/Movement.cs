@@ -42,7 +42,7 @@ public class Movement : MonoBehaviour
 
 
         Vector2 direction = new Vector2(horizontal,0);
-        rb.velocity = direction * speed;
+        rb.velocity = direction * speed ;
 
     }
     private void OnCollisionEnter2D(Collision2D collision)
