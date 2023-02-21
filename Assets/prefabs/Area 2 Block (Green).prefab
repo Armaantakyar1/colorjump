@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 1524543713873110980}
   - component: {fileID: 8233078269427914471}
   - component: {fileID: 7452138597675343912}
+  - component: {fileID: -4209157390788841931}
   m_Layer: 0
   m_Name: Area 2 Block (Green)
   m_TagString: Untagged
@@ -159,3 +160,15 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &-4209157390788841931
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2025535121712599200}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e667499ae9ded5458e8ba68848ce04b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
