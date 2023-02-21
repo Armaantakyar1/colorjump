@@ -6,6 +6,7 @@ public class PlatformDeactivator : MonoBehaviour
 
 {
     [SerializeField] GameObject platformDeactive;
+    [SerializeField] GameObject bgActivate;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,6 +21,7 @@ public class PlatformDeactivator : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     {
         platformDeactive.SetActive(false);
+        bgActivate.SetActive(true);
     }
 
 }

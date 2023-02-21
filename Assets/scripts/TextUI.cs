@@ -15,7 +15,7 @@ public class TextUI : MonoBehaviour
         
     }
 
-   
+    
     void Update()
     {
         
