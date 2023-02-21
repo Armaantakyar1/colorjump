@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: -4569515512308699793}
   - component: {fileID: -418105712110871771}
   - component: {fileID: 3983025224899660121}
+  - component: {fileID: -2277456761471183071}
   m_Layer: 0
   m_Name: Area 1 Block (Green)
   m_TagString: Untagged
@@ -159,3 +160,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   platformDeactive: {fileID: 0}
+--- !u!114 &-2277456761471183071
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2025535121712599200}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e667499ae9ded5458e8ba68848ce04b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startX: 0
+  endX: 0
+  speed: 1
