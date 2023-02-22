@@ -11,6 +11,7 @@ public class Movement : MonoBehaviour
     [SerializeField] KeyCode right;
     [SerializeField] KeyCode left;
     [SerializeField] KeyCode jump;
+    public AudioSource jumpsfx;
     public bool canjump = true;
     void Start()
     {
@@ -35,6 +36,7 @@ public class Movement : MonoBehaviour
         }
         if (Input.GetKeyDown(jump) && canjump== true )
         {
+            jumpsfx.Play();
             rb.AddForce(Vector2.up * jumpForce* speed);
 
             canjump = false;
