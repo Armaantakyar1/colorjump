@@ -677,6 +677,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player1: {fileID: 1740541915}
   player2: {fileID: 992649782}
+  changescene: 0
 --- !u!61 &191881056
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2294,6 +2295,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 256172623143926006}
     m_Modifications:
+    - target: {fileID: -2277456761471183071, guid: 7a75c01ad6ab5154b8880203373272ac, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: -418105712110871771, guid: 7a75c01ad6ab5154b8880203373272ac, type: 3}
       propertyPath: bgDeactivate
       value: 
@@ -2396,6 +2401,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player1: {fileID: 1740541915}
   player2: {fileID: 992649782}
+  changescene: 1
 --- !u!61 &1046864520
 BoxCollider2D:
   m_ObjectHideFlags: 0

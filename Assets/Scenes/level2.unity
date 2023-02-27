@@ -2294,6 +2294,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 256172623143926006}
     m_Modifications:
+    - target: {fileID: -2277456761471183071, guid: 7a75c01ad6ab5154b8880203373272ac, type: 3}
+      propertyPath: startX
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -2277456761471183071, guid: 7a75c01ad6ab5154b8880203373272ac, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: -418105712110871771, guid: 7a75c01ad6ab5154b8880203373272ac, type: 3}
       propertyPath: bgDeactivate
       value: 
