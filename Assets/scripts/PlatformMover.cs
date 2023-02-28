@@ -4,33 +4,16 @@ using UnityEngine;
 
 public class PlatformMover : MonoBehaviour
 {
-    public float startX;
-    public float endX;
-    public float speed = 1.0f;
+    public Transform startPoint;
+    public Transform endPoint;
+    public float duration;
 
-    private float journeyLength;
-    private float startTime;
+    private float currentTime = 0f;
 
-    void Start()
+    private void Update()
     {
-        journeyLength = Mathf.Abs(startX - endX);
-        startTime = Time.time;
-    }
-
-    void Update()
-    {
-        float distCovered = (Time.time - startTime) * speed;
-        float fracJourney = distCovered / journeyLength;
-        float newX = Mathf.Lerp(startX, endX, fracJourney);
-        transform.position = new Vector3(newX, transform.position.y, transform.position.z);
-
-        if (Mathf.Approximately(newX, endX))
-        {
-            startTime = Time.time;
-            float temp = startX;
-            startX = endX;
-            endX = temp;
-        }
+        float t = Mathf.PingPong(Time.time / duration, 1f);
+        transform.position = Vector3.Lerp(startPoint.position, endPoint.position, t);
     }
 }
 
